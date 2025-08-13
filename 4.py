@@ -3,8 +3,8 @@ import sys,re
 import datetime
 from datetime import datetime, timedelta
 import json
+import pystyle
 import time
-from itertools import cycle
 import random
 import platform
 try:
@@ -22,11 +22,6 @@ try:
 except ImportError:
   os.system('pip3 install beautifulsoup4')
   from bs4 import BeautifulSoup
-try:
-	from pystyle import Colors, Colorate
-except ImportError:
-	os.system('pip install pystyle')
-	from pystyle import Colors, Colorate
 try:
   import cloudscraper
 except ImportError:
